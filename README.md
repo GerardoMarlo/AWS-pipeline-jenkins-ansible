@@ -63,7 +63,7 @@ sudo docker info | grep -i cgroup
 
 kind: ClusterConfiguration
 apiVersion: kubeadm.k8s.io/v1beta3
-kubernetesVersion: v1.22.0
+kubernetesVersion: v1.25.0
 networking:
     podSubnet: 10.244.0.0/16
 
@@ -77,7 +77,7 @@ cgroupDriver: cgroupfs
 
 ```
 
-sudo kubeadm init --config config-kubeadm.yml
+sudo kubeadm init --config kubeadm-config.yml
 
 ```
 

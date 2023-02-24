@@ -1,22 +1,22 @@
 - name: build docker image and push it to dockr hub
   hosts: local
   become: yes 
-  become_user: abdelali
+  become_user: marlo
   
 
   tasks:
   - name: build image
     command: docker build -t nodejs-pipeline .
     args:
-       chdir: /home/abdelali/devops/nodeserver
+       chdir: /home/marlo/devops/nodeserver
 
   - name: tag the image
-    command: docker tag nodejs-pipeline abdelalidocker/nodejs-pipeline:latest
+    command: docker tag nodejs-pipeline gerardomarlo/nodejs-pipeline:latest
 
 
   - name: push the built image to dockerhub
-    command: docker push abdelalidocker/nodejs-pipeline:latest
+    command: docker push gerardomarlo/nodejs-pipeline:latest
 
 
   - name: delete the built image and the taged one
-    command: docker rmi nodejs-pipeline abdelalidocker/nodejs-pipeline:latest
+    command: docker rmi nodejs-pipeline gerardomarlo/nodejs-pipeline:latest

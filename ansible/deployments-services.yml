@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: abdelalidocker/nodejs-pipeline:latest
+        image: marlo/nodejs-pipeline:latest
         ports:
         - containerPort: 3001
 
@@ -101,7 +101,7 @@ spec:
     spec:
       containers:
       - name: nginx-app
-        image: abdelalidocker/reactjs-pipeline:latest
+        image: marlo/reactjs-pipeline:latest
         ports:
         - containerPort: 80
 

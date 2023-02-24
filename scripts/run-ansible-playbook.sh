@@ -1,4 +1,4 @@
-cd /home/abdelali/devops/ansible
+cd /home/marlo/devops/ansible
 echo "the ansible build nodejs image started"
 ansible-playbook ansible-build-nodejs-image.yml 
 echo "the ansible build nodejs image finished"
