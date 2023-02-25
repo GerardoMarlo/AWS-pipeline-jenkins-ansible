@@ -1,4 +1,4 @@
-cd /home/abdelali/devops
+cd /home/marlo/devops
 sudo cp -r build/* nginx
 
 # sudo cp ansible/deployments-services.yml /home/abdelali/

@@ -1,6 +1,5 @@
 - name: build docker image and push it to dockr hub
   hosts: local
-  become: yes 
   become_user: marlo
   
 
