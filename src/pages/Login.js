@@ -60,7 +60,7 @@ class Login extends React.PureComponent {
           <Button type="primary" htmlType="submit" className="login-form-button">
             Log in
           </Button>
-          Or <Link to={'/register'}>sign up now!</Link>
+          Or <Link to={'/register'}> Sign un now! </Link>
         </Form.Item>
       </Form>
     )
