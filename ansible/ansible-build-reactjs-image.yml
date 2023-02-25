@@ -1,7 +1,7 @@
 - name: build docker image and push it to dockr hub
   hosts: local
   become_user: marlo
-  
+  become_method: sudo
 
   tasks:
   - name: build image
